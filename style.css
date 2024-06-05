@@ -1,0 +1,1451 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+    /* border: 1px solid red; */
+}
+.main-section{
+    width: 100%;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+}
+.nav-container{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 59px;
+}
+.navbar .logo img{
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+}
+.navbar .logo{
+    font-size: 1.563rem;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-list{
+   width: 40%;
+   height: auto;
+}
+
+.logo-pair{
+    margin-right: 40px;
+}
+.nav-list ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 10px; */
+}
+.nav-link-active{
+    width: 108.59px;
+    height: 52.4px;
+    background-color: rgb(56,116,255);
+    border:none;
+}
+.nav-link-active a{
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+.nav-link{
+    width: 108.59px;
+    height: 52.4px;
+    background-color: rgb(0, 0, 0);
+    border:none;
+}
+.nav-link:hover{
+    background-color: rgb(56,116,255);
+}
+.nav-link a{
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+.nav-toggle-btn {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 6px;
+    background-color: transparent;
+    border: none;
+   display: none;
+}
+
+.nav-toggle-btn span{
+    display: block;
+}
+
+
+.nav-toggle-btn .line{
+    width: 26px;
+    height: 3px;
+    background-color: white;   
+}
+
+.nav-toggle-btn .line-1,
+.line-2{
+    margin-bottom: 3px;
+}
+
+.responsive-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.black-but{
+    width: 75.6px;
+    height: 32.6px;
+    background-color: black;
+    border-radius: 50px;
+    border: 1px solid white;
+    font-size: 0.938rem;
+    font-weight: 500;
+    color: white;
+}
+.black-but:hover{
+    background-color: rgb(56,116,255);
+    border: none;
+}
+/* nav-bar end */
+.hero-section{
+    width: 100%;
+    height: auto;
+    background-color: rgb(23,24,28);
+    display: flex;
+    justify-content: center;
+    padding-block: 120px;
+    position: relative;
+    z-index: 1;
+}
+.hero-content{
+    width: 38%;
+    height: auto;
+    margin-left: 20px;
+}
+.hero-content h1{
+    font-size: 4rem;
+    font-weight: 700;
+    color: RGB(255, 255, 255);
+    line-height: 70.4px;
+    letter-spacing: 2px;
+}
+.hero-content p{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: RGB(177, 181, 195);
+    margin-top: 30px;
+}
+.blue-btn{
+    width: 186.65px;
+    height: 48.4px;
+    border-radius: 50px;
+    background-color: rgb(56,116,255);
+    font-size: 1rem;
+    font-weight: 700;
+    color: RGB(255, 255, 255);
+    border: none;
+    margin-top: 40px;
+}
+.hero-banner{
+    width: 45%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+   
+}
+.hero-banner img{
+    width: 570px;
+    height: 448px;
+    margin-top: -40px;
+    margin-left: 80px;
+}
+/* .hero-secation end */
+
+.trend-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.trend-box{
+    width: 85%;
+    height: 258px;
+    background-color: rgb(23,24,28);
+    border-radius: 20px;
+    z-index: 2;
+    border: 1px solid hsl(225, 15%, 16%);;
+    margin-block-start: -60px;
+}
+.tab-nav{
+    width: 100%;
+    height: 80px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.tab-nav .btn{
+    width: 77.84px;
+    height: 33.6px;
+    background-color: rgb(56,116,255);
+    border-radius: 50px;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: RGB(255, 255, 255);
+    text-align: center;
+    padding: 8px;
+}
+.tab-nav li{
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: RGB(255, 255, 255); 
+}
+.tab-trend{
+    width: 100%;
+    height: auto;
+    list-style: none;
+    display: flex;
+   padding-left: 20px;
+   padding-top: 20px;
+}
+.card-trend{
+    width: 287px;
+    height: 142px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-right: 20px;
+
+}
+.card-trend:hover{
+    width: 287px;
+    height: 142px;
+    background-color: rgb(35,37,47);
+    border-radius: 12px;
+
+}
+.card-trend-2{
+    width: 287px;
+    height: 142px;
+    background-color: rgb(35,37,47);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-right: 20px;
+}
+.card-wrapper{
+  width: 287px; 
+  height: auto;
+  display: flex;
+  align-items: center;
+  
+}
+
+
+.card-wrapper img{
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+.card-wrapper a{
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+.card-wrapper a:hover{
+    color:RGB(56, 116, 255);
+} 
+.card-title span{
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: RGB(177, 181, 195);
+    text-decoration: none;
+}
+.card-value{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin-top: 10px;
+}
+.card-anylaties{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.card-price{
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: RGB(177, 181, 195);
+    text-decoration: none;
+}
+.red-value{
+    width: 58.3px;
+    height: 24.8px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: RGB(255, 255, 255);
+    background-color: RGB(211, 54, 54);
+    text-align: center;
+    padding-top: 5PX;
+    margin-left: 8px;
+}
+.green-value{
+    width: 58.3px;
+    height: 24.8px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: RGB(255, 255, 255);
+    background-color:rgb(87,188,124);
+    text-align: center;
+    padding-top: 5PX;
+    margin-left: 8px;
+}
+hr{
+    width: 97%;
+    background-color: rgb(72, 70, 70);
+    margin-left: 15px;
+}
+/* trend-secation end */
+.market-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-block: 120px;
+}
+.market-overflow{
+    width: 100%;
+    height: auto;
+}
+.market-wrapper{
+    width: 85%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 120px;
+}
+.market-wrapper h2{
+    font-size: 3rem;
+    font-weight: 700;
+    color: RGB(255, 255, 255);
+}
+.market-wrapper .coin-link{
+    font-size: 1rem;
+    font-weight: 700;
+    color: RGB(255, 255, 255);
+}
+.market-wrapper .coin-link:hover{
+  color: RGB(56, 116, 255);
+}
+.market-tab{
+    width: 60%;
+    height:auto;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+.market-nav{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.market-btn{
+    width:102.08px;
+    height: 33.6px;
+    border-radius: 50px;
+    background-color: rgb(56,116,255);
+    font-size: 0.875rem;
+    font-weight: 700;
+    color:white;
+    border: none;
+}
+.market-nav li{
+    font-size: 0.875rem;
+    font-weight: 700;
+    color:white;
+}
+.market-table{
+    width:100%;
+    height: auto;
+}
+.market-head{
+    width: 85%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 120px;
+    list-style: none;
+    overflow-x: auto;
+}
+.table-heading{
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: white;
+}
+.table-heading:first-child{
+    width: 51.79px;
+    height: 42px;
+}
+.table-heading:nth-child(2){
+    width: 47.89px;
+    height: 42px;
+}
+.table-heading:nth-child(3){
+    width: 277.25px;
+    height: 42px;
+}
+.table-heading:nth-child(4){
+    width: 173.43px;
+    height: 42px;
+}
+.table-heading:nth-child(5){
+    width: 133.74px;
+    height: 42px;
+}
+.table-heading:nth-child(6){
+    width: 268.34px;
+    height: 42px;
+}
+.table-heading:nth-child(7){
+    width: 176.73px;
+    height: 42px;
+}
+.table-heading:nth-child(7){
+    width: 120.85px;
+    height: 42px;
+}
+.market-line{
+    width: 85%;
+    margin-left: 120px;
+}
+.market-data{
+    width: 85%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    padding-top: 60px;
+    list-style: none;
+    margin-left: 120px;
+    border-bottom:thin solid rgb(35,38,47);
+}
+.market-data:hover{
+    background-color: rgba(48, 48, 101, 0.31);
+}
+.table-icon{
+    font-size: 1.125rem;
+    color: white;
+    width: 51.79px;
+    height: 90px;
+}
+.table-rank{
+    font-size: 1.125rem;
+    color: white;
+    font-weight: 700;
+    width: 47.89px;
+    height: 90px;
+}
+.table-data{
+    display: flex;
+    align-items: center;
+    width: 277.25px;
+    height: 90px;
+    padding-bottom: 70px;
+}
+.table-data img{
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+.coin-name{
+    font-size: 1.125rem;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+.coin-name:hover{
+    color: rgb(56,116,255);
+}
+span{
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: RGB(120, 127, 145);
+    margin-left: 8px;
+}
+.latest-price{
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: white;
+    width: 173.43px;
+    height: 90px;
+}
+.latest-per{
+    font-size: 1.125rem;
+    font-weight: 700;
+    color:RGB(87, 188, 124);
+    width: 133.74px;
+    height: 90px;
+}
+.latest-per-1{
+    font-size: 1.125rem;
+    font-weight: 700;
+    width: 133.74px;
+    height: 90px;
+    color: rgb(155, 14, 14);
+
+}
+.market-cap{
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: white;
+    width: 268.34px;
+    height: 90px;
+}
+.market-chart{
+    width: 176.73px;
+    height: 90px;
+    padding-bottom: 70px;
+}
+.market-chart img{
+    width: 100px;
+    height: 40px;
+}
+.trade{
+    width: 120.85px;
+    height: 90px;
+}
+.trade button{
+    width: 63.29px;
+    height: 34px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 50px;
+    color: white;
+    font-size: 0.938rem;
+    font-weight: 500;
+}
+.trade button:hover{
+    background-color:rgb(56,116,255);
+    border: none;
+}
+/* .market-secation end */
+
+/*  instruction-section */
+
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding-inline: 30px;
+    padding-block: 50px;
+    background-color: #17181C;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .section-text {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #A3B5B9;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  .instruction-list-wrapper {
+    position: relative;
+  }
+  
+  .instruction-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: hidden; /* Remove horizontal scrollbar */
+  }
+  
+  .instruction-list li {
+    flex: 1; /* Allow the cards to shrink */
+    margin-bottom: 20px;
+    margin-right: 20px; /* Add space between cards */
+  }
+  
+  .instruction-list li:last-child {
+    margin-right: 0; /* Remove margin from the last card */
+  }
+  
+  .instruction-card {
+    background: #17181C;
+    /* border: 1px solid #ddd; */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    /* background-color: aqua; */
+  }
+
+  .img{
+    transition: transform 0.5s ease;
+}
+
+.img:hover {
+    animation: spin 0.5s linear;
+}
+
+@keyframes spin {
+    from { transform: rotateX(0deg); }
+    to { transform: rotateY(360deg); }
+}
+
+  
+  .card-banner {
+    margin-bottom: 20px;
+  }
+  
+  .card-banner img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .card-subtitle {
+    font-size: 12px;
+    font-weight: 700;
+    color: #B1B5C3;
+    margin-bottom: 10px;
+  }
+  
+  .card-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+  }
+  
+  .card-text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #A3B5B9;
+  }
+  
+  .connect-line {
+    position: absolute;
+    top: 25%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  .step1-2 {
+    left: calc(19% - 20px);
+    width: 14%;
+  }
+  
+  .step2-3 {
+    left: calc(44% - 10px);
+    width: 14%;
+  }
+  
+  .step3-4 {
+    left: calc(69% - 10px);
+    width: 14%;
+  }
+  
+
+
+/* instruction-secation end */
+.Cryptex-section{
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cryptex-content{
+    width: 50%;
+    height: auto;
+}
+.crypetx-title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: RGB(255, 255, 255);
+   
+}
+.cryptex-text{
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: RGB(177, 181, 195);
+    margin-top: 20px;
+}
+.cryptex-subtitle{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin-top: 20px;
+}
+.cryptex-subtitle i{
+    font-size: 1.125rem;
+    color: blue;
+    margin-right: 10px;
+}
+.cryptex-btn{
+    width: 162.81px;
+    height: 48.4px;
+    border-radius: 50px;
+    background-color: rgb(56,116,255);
+    font-size: 1rem;
+    font-weight: 700;
+    color: RGB(255, 255, 255);
+    border: none;
+    margin-top: 20px;
+}
+.Cryptex-banner{
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.Cryptex-banner img{
+    width: 100%;
+    height: 385.34px;
+}
+/* Cryptex-section end */
+
+.money-section{
+    width: 100%;
+    height: 650px;
+    background-color:rgb(23,24,28);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 130px;
+}
+.money-content{
+    width: 50%;
+    height: auto;
+}
+.money-title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: RGB(255, 255, 255);
+    line-height: 52.8px;
+}
+.money-text{
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: RGB(177, 181, 195);
+    margin-top: 20px;
+}
+.money-subtitle{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin-top: 20px;
+}
+.money-subtitle i{
+    font-size: 1.125rem;
+    color: blue;
+    margin-right: 10px;
+}
+.app{
+    width: 500px;
+    height: auto;
+}
+.app img{
+    width: 135px;
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+.money-banner{
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.money-banner img{
+    width: 612px;
+    height: 526px;
+    margin-top: 120px;
+}
+.money-btn{
+    width: 161px;
+    height: 38.8px;
+    background-color:rgb(23,24,28);
+    border: 1px solid white;
+    border-radius: 50px;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 700;
+    position: relative;
+    top: 200px;
+    left: 150px;
+}
+/* money-section end */
+.footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 80px;
+    padding-inline:50px; 
+    background-color: rgb(19,19,21);
+}
+.footer-brand{
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.footer-logo img{
+    width: 50px;
+    height: 50px;
+    margin-right: 8px;
+}
+.footer-logo{
+    font-size: 1.875rem;
+    color: white;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+.footer h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.footer-brand a{
+    font-size: 1rem;
+    font-weight: 400;
+    color:  RGB(177, 181, 195);
+    text-decoration: none;
+}
+.footer-brand p{
+    font-size: 1rem;
+    font-weight: 400;
+    color:  RGB(177, 181, 195);
+    text-decoration: none;
+    margin-top: 20px;
+}
+.footer-brand .adress{
+    font-size: 1rem;
+    font-weight: 400;
+    color:  RGB(177, 181, 195);
+    text-decoration: none;
+    margin-top: 20px;
+}
+.footer-list-1{
+    width: 16%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.footer-list-1 a{
+    margin-top: 10px;
+}
+
+
+.footer-list-1 h5,
+.footer-list-2 h5,
+.footer-list-3 h5,
+.footer-list-4 h5{
+    margin-bottom: 30px;
+}
+
+.footer-list-1 h5{
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: white;
+    /* margin-bottom: 30px; */
+}
+.footer-list-1 a{
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+}
+.footer-list-1 a:hover{
+    color: RGB(56, 116, 255);
+} 
+ /* 1 */
+.footer-list-2{
+    width: 16%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.footer-list-2 a{
+    margin-top: 10px;
+}
+
+.footer-list-2 h5{
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: white;
+    /* margin-bottom: 30px; */
+}
+.footer-list-2 a{
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+}
+.footer-list-2 a:hover{
+    color: RGB(56, 116, 255);
+} 
+/* 2 */
+.footer-list-3{
+    width: 16%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.footer-list-3 a{
+    margin-top: 10px;
+}
+
+.footer-list-3 h5{
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: white;
+    /* margin-bottom: 30px; */
+}
+.footer-list-3 a{
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+}
+.footer-list-3 a:hover{
+    color: RGB(56, 116, 255);
+} 
+/* 3 */
+
+.footer-list-4{
+    width: 16%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.footer-list-4 a{
+    margin-top: 10px;
+}
+
+.footer-list-4 h5{
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: white;
+    /* margin-bottom: 30px; */
+}
+.footer-list-4 a{
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+}
+.footer-list-4 a:hover{
+    color: RGB(56, 116, 255);
+} 
+/* 4 */
+
+/* footer-end */
+.mini-footer{
+    width: 100%;
+    height: auto;
+    background-color: rgb(23,24,28);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 80px;
+    padding-block: 18px;
+}
+.mini-footer p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: RGB(177, 181, 195);
+}
+.blue-link{
+    font-size: 1rem;
+    font-weight: 400;
+    color:RGB(56, 116, 255); 
+}
+.icon{
+    width: 180px;
+    height: auto;
+}
+.icon i{
+    font-size: 1.125rem;
+    color: RGB(177, 181, 195);
+    margin-left: 20px;
+}
+.icon i:hover{
+    color:RGB(56, 116, 255); 
+}
+
+
+/* Responsive-768px */
+
+@media (max-width:768px) {
+    .main-section{
+    width: 100%;
+    height: auto;
+}
+.nav-container{
+    width: 100%;
+    height: 65px;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+}
+.nav-list{
+   width: 45%;
+   height: auto;
+   margin-left: 0px;
+}
+.nav-link-active{
+   display: none;
+}
+.nav-link-active a{
+   display: none;
+}
+.nav-link{
+   display: none;
+}
+.nav-link a{
+   display: none;
+}
+
+.nav-toggle-btn {
+    display: inline;
+    padding: 8px 5px;
+    margin-inline-start: auto;
+}
+
+.black-but{
+    width: 75.6px;
+    height: 32.6px;
+}
+/* nav-bar end */
+.hero-section{
+    width: 100%;
+    height: 980px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-block: 0;
+    padding-top: 10px;
+}
+.hero-content{
+    width: 95%;
+    height: auto;
+}
+.hero-content h1{
+    font-size: 3.125rem;
+    letter-spacing: 2px;
+    line-height: 55px;
+}
+.hero-content p{
+    font-size: 1.25rem;
+    margin-top: 30px;
+}
+.blue-btn{
+    width: 186.65px;
+    height: 48.4px;
+    margin-top: 40px;
+}
+.hero-banner{
+    width: 100%;
+    height: auto;
+    margin-top: 120px;
+   
+}
+.hero-banner img{
+    width: 100%;
+    height: 448px;
+    margin-top: -40px;
+    margin-left: 0;
+}
+/* .hero-secation end */
+
+.trend-secation{
+    width: 100%;
+    height: auto;
+}
+.trend-box{
+    width: 90%;
+    height: auto;
+}
+.tab-nav{
+    width: 85%;
+    height: 80px;
+    padding-left: 10px;
+}
+
+.tab-trend{
+    width: 100%;
+    height: auto;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-top: 20px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.disable{
+    display: none;
+}
+.card-trend{
+    width: 329px;
+    height: 142px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+}
+.card-trend-2{
+    width: auto;
+    height: 142px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-block: 100px;
+}
+.card-wrapper{
+  width: 287px; 
+  height: auto;
+  
+}
+
+/* trend-secation end */
+/* market-section */
+
+
+.market-section{
+    width: 100%;
+    height: auto;
+    overflow-x: scroll;
+}
+.market-overflow{
+    width: 150%;
+    height: auto;
+}
+.market-wrapper{
+    width: 85%;
+    height: 50px;
+    margin-left: 20px;
+}
+
+.market-nav{
+    width: 100%;
+    /* background-color: aqua; */
+}
+.market-tab{
+    width: 90%;
+    height:auto;
+    margin-left: 0;
+    margin-right: 0px;
+    margin-top: 50px;
+    /* overflow-x: scroll; */
+}
+
+.market-table{
+    width:100%;
+    height: auto;
+}
+.market-head{
+    width: 90%;
+    height: auto;
+    margin-left: 20px;
+    overflow-x: auto;
+}
+
+.table-heading:first-child{
+    width: 34px;
+    height: 42px;
+}
+.table-heading:nth-child(2){
+    width: 31.44px;
+    height: 42px;
+}
+.table-heading:nth-child(3){
+    width: 181.99px;
+    height: 42px;
+}
+.table-heading:nth-child(4){
+    width: 113.84px;
+    height: 42px;
+}
+.table-heading:nth-child(5){
+    width: 87.79px;
+    height: 42px;
+}
+.table-heading:nth-child(6){
+    width: 176.14px;
+    height: 42px;
+}
+.table-heading:nth-child(7){
+    width: 116px;
+    height: 42px;
+}
+.table-heading:nth-child(8){
+    width: 79.29px;
+    height: 42px;
+}
+.market-line{
+    width: 85%;
+    margin-left: 20px;
+}
+.market-data{
+    width: 85%;
+    height: 90px;
+    margin-left: 20px;
+}
+.table-icon{
+    width: 34px;
+    height: 90px;
+}
+.table-rank{
+    width: 31.44px;
+    height: 90px;
+}
+.table-data{
+    width: 181.99px;
+    height: 90px;
+}
+.table-data img{
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.latest-price{
+    width: 113.84px;
+    height: 90px;
+}
+.latest-per{
+    width: 87.79px;
+    height: 90px;
+}
+.latest-per-1{
+    width: 87.79px;
+    height: 90px;
+}
+.market-cap{
+    width: 176.14px;
+    height: 90px;
+}
+.market-chart{
+    width: 116.42px;
+    height: 90px;
+}
+.market-chart img{
+    width: 100px;
+    height: 40px;
+}
+.trade{
+    width: 76.42px;
+    height: 90px;
+}
+.trade button{
+    width: 63.29px;
+    height: 34px;
+} 
+
+
+ 
+
+/* market-section end  */
+
+    .container{
+        width: 100%;
+    }
+
+    .instruction-list{
+        flex-direction: column;
+        padding-inline: 30px;
+    }
+
+    .connect-line{
+        display: none;
+    }
+
+    .card-text{
+        font-size: 18px;
+        word-spacing: 5px;
+    }
+
+/* instruction-section end */
+.Cryptex-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    padding-block: 40px;
+    padding-inline: 40px;
+
+}
+.cryptex-content{
+    width: 100%;
+    height: auto;
+}
+.cryptex-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.cryptex-text{
+    font-size: 1.125rem;
+}
+.cryptex-text br{
+    display: none;
+}
+.cryptex-subtitle{
+    font-size: 1.5rem;
+}
+.cryptex-btn{
+    width: 162.81px;
+    height: 48.4px;
+    font-size: 1rem;
+}
+.Cryptex-banner{
+    width: 100%;
+    height: auto;
+}
+.Cryptex-banner img{
+    width: 661px;
+    height: 385.34px;
+}
+/* Cryptex-secation end */
+.money-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline:0;
+    flex-direction: column;
+    padding-block: 100px;
+}
+.money-content{
+    width: 100%;
+    height: auto;
+    padding-inline: 40px;
+}
+.money-title{
+    font-size: 2.5rem;
+    line-height: 44px;
+}
+.money-title br{
+    display: none;
+}
+.money-text br{
+    display: none;
+}
+.money-banner{
+    width: 100%;
+    height: auto;
+    margin-right: 250px;
+}
+.money-banner img{
+   align-items: center;
+   justify-content: center;
+   padding-inline: 30px;
+   margin: 0;
+   padding: 0;
+}
+
+/* money-secation end */
+.footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    padding-block: 50px;
+    padding-inline: 40px; 
+    flex-direction: column;
+    white-space: nowrap;
+}
+
+.footer-list-1,
+.footer-list-2,
+.footer-list-3,
+.footer-list-4{
+    margin-top: 70px;
+}
+
+.footer-list-1 h5,
+.footer-list-2 h5,
+.footer-list-3 h5,
+.footer-list-4 h5{
+    margin-bottom: 15px;
+    
+}
+
+
+.footer a{
+    font-size: 16px;
+    color: #b1b5c3;
+}
+
+ 
+/* footer-end */
+.mini-footer{
+    width: 100%;
+    height: 60px;
+    padding-inline: 20px;
+}
+/* mini-footer end */
+
+}
