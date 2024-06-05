@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "DM Sans", sans-serif;
-    /* border: 1px solid red; */
 }
 .main-section{
     width: 100%;
@@ -754,7 +753,7 @@ span{
 
 .money-section{
     width: 100%;
-    height: 650px;
+    height: auto;
     background-color:rgb(23,24,28);
     display: flex;
     justify-content: center;
@@ -1363,8 +1362,8 @@ span{
     height: auto;
 }
 .Cryptex-banner img{
-    width: 661px;
-    height: 385.34px;
+    width: 100%;
+    height: auto;
 }
 /* Cryptex-secation end */
 .money-section{
@@ -1395,9 +1394,11 @@ span{
 .money-banner{
     width: 100%;
     height: auto;
-    margin-right: 250px;
+    margin-right: 150px;
 }
 .money-banner img{
+    width: 100%;
+    height: auto;
    align-items: center;
    justify-content: center;
    padding-inline: 30px;
@@ -1449,3 +1450,31 @@ span{
 /* mini-footer end */
 
 }
+
+
+@media(max-width:375px){
+    .main-section{
+        width: 100%;
+        height: auto;
+    }
+
+    .navbar{
+        width: 100%;
+        padding-inline: 10px;
+    }
+
+    .nav-list{
+        width: auto;
+    } 
+
+    .adress{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 14px;
+    }
+
+    .card-trend{
+        width: 100%;
+    }
+}
+ 
